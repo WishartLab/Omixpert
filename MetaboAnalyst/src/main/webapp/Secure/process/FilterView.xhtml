@@ -13,10 +13,7 @@
         <h:form>
             <h:panelGrid style="padding:20px 40px 20px 40px; font-size: 16px; line-height: 25px; width:100%; position: relative">
                 <h1>Data Filtering:</h1>
-                <h:panelGrid style="width:100%; background-color: #75bafb;"></h:panelGrid>
-                <h:panelGrid style="width:100%; background-color: white; "></h:panelGrid>
-                <h:panelGrid style="width:100%; background-color: #75bafb;"></h:panelGrid>
-                <h:panelGrid style="width:100%; background-color: white; "></h:panelGrid>  
+                <ui:include src="/frags/_bar_lines.xhtml" />  
                 <p>
                     The purpose of the data filtering is to identify and remove variables that are unlikely to be of use 
                     when modeling the data. Filtering can often improve the results. This step is recommended for data sets with large number of variables (>250). 

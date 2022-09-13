@@ -22,20 +22,21 @@
             <p:layoutUnit position="north" style="margin:0px; padding:0px;" collapsible="true" gutter="0"></p:layoutUnit>
             
             <p:layoutUnit position="center" style="margin:0px; padding:0px;" collapsible="true" gutter="0">
+                
                 <p:panelGrid>
                    <div style="position: relative; left: -30px; top: -10px; width: calc(100% + 60px); overflow-x: hidden;">
                         <ui:include src="/carousel/_carousel_main.xhtml" />
                         <div  style="position: absolute; top: 25%; height: 50%; background-color:rgba(355,355,355,0.8); width: 100%;">
-                            <img style="margin-top: 1%; margin-left: 10%; float: left;" src="#{facesContext.externalContext.requestContextPath}/resources/images/logo3.5.png"></img>
-                            <div style="position: relative; white-space: nowrap; padding: 1%; display: table; margin-top: 4%; width:60%; height:20%; background-color: #75bafb; float: right">
-                                <span style="margin-left: 10px; font-size: 16px;"><a style="text-decoration:none"  href="#{facesContext.externalContext.requestContextPath}/faces/ModuleHome.xhtml">
+                            <img style="margin-top: 5%; margin-left: 10%; float: left; width: 400px "  src="#{facesContext.externalContext.requestContextPath}/resources/images/OmiXpertLogo.png"></img>
+                            <div id="homebars" style="margin-top: 4%; width:60%; height:20%;">
+                                <span style="margin-left: 10px; font-size: 16px;"><a style="text-decoration:none; color: black;"  href="#{facesContext.externalContext.requestContextPath}/faces/ModuleHome.xhtml">
                                     Browse Modules
                                     <span class="glyphicon glyphicon-chevron-right"></span>
                                     <span class="glyphicon glyphicon-chevron-right"></span>
                                 </a></span>
                             </div>
-                            <div style="position: relative; white-space: nowrap; padding: 1%; display: table; margin-top: 4%; width:50%; height:20%; background-color: #75bafb; float: right">
-                                <span style="margin-left: 10px; font-size: 16px;"><a style="text-decoration:none"  href="#{facesContext.externalContext.requestContextPath}/faces/Overview.xhtml">
+                            <div id="homebars" style = "margin-top: 4%; width:50%; height:20%;">
+                                <span style="margin-left: 10px; font-size: 16px;"><a style="text-decoration:none; color: black;"  href="#{facesContext.externalContext.requestContextPath}/faces/Overview.xhtml">
                                     <span>Overview</span>
                                     <span class="glyphicon glyphicon-chevron-right"></span>
                                     <span class="glyphicon glyphicon-chevron-right"></span>
@@ -44,8 +45,9 @@
                         </div>
                     </div>
                 </p:panelGrid>
+                
                 <p:panelGrid>
-                    <h2 style="margin-left: 20px; font-size: 24px;">Welcome to Ecologystics 1.0!</h2>
+                    <h2 style="margin-left: 20px; font-size: 24px; text-align: center;">Welcome to OmiXpert</h2>
                     <ui:include src="/frags/_bar_lines.xhtml" />
                     <h:panelGrid style="margin-left: 20px; margin-right: 20px; width:100%;">
                         <p></p>

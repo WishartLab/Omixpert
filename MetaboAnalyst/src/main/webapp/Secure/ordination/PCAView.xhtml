@@ -18,45 +18,7 @@
     </ui:define>
     <ui:define name="content">
         <h:inputHidden id="mydir" value="#{sessionBean1.currentUser.relativeDir}" />
-<!--        <h:inputHidden id="mydir" value="#{sessionBean1.getJsonDir('pca_score3d')}" />
-        <script type="text/javascript">
-            // for scatter plot
-            function addBind() {
-                mychart = $("[id='ac:chart']");
-                mychart.unbind('jqplotDataClick');
-                mychart.bind('jqplotDataClick',
-                        function (ev, seriesIndex, pointIndex, data) {
-                            //note, we use the internal index, not point index 
-                            remoteCall([{name: 'cmpdIndex', value: data[0]}]);
-                        });
-            }
 
-            function ext() {
-                this.cfg.seriesDefaults = {
-                    lineWidth: 1.0,
-                    linePattern: 'dashed',
-                    showMarker: false,
-                    markerOptions: {
-                        color: 'rgba(128, 0, 128, 0.5)'
-                    },
-                    shadow: false
-                };
-                this.cfg.axes = {
-                    yaxis: {
-                        showLabel: true,
-                        tickOptions: {
-                            formatString: "%#.2f"
-                        }
-                    },
-                    xaxis: {
-                        showLabel: true,
-                        tickOptions: {
-                            formatString: "%#.2f"
-                        }
-                    }
-                };
-            }
-        </script>-->
         <h:panelGrid style="padding:4px 20px 20px 20px; font-size: 12px; line-height: 23px; width:100%">
             <h1>Principal Component Analysis:</h1>            
             <p:tabView id="ac" style="width:100%; border: none; background: none; font-size: 13px;">
