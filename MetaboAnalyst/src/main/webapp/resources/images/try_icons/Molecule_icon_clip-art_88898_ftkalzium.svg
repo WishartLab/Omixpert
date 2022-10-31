@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:cc="http://web.resource.org/cc/"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    id="svg1"
+    sodipodi:docname="katomic.svg"
+    viewBox="0 0 60 60"
+    sodipodi:version="0.32"
+    version="1.0"
+    y="0"
+    x="0"
+    inkscape:version="0.37"
+    sodipodi:docbase="/home/danny/flat/scalable/apps"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-width="1016"
+      pagecolor="#ffffff"
+      inkscape:zoom="4.91194112"
+      inkscape:window-x="0"
+      borderopacity="1.0"
+      inkscape:cx="35.4073013"
+      inkscape:cy="22.8764173"
+      inkscape:window-y="0"
+      inkscape:window-height="693"
+      inkscape:pageopacity="0.0"
+  />
+  <path
+      id="path601"
+      style="stroke:#333333;stroke-width:3.125;fill:none"
+      transform="translate(.25448 .25448)"
+      d="m30.029 12.157l-0.764 21.886-18.068 15.014m35.628-0.254l-17.56-14.76 18.312-10.572"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+  />
+  <path
+      id="path599"
+      sodipodi:rx="7.50721550"
+      sodipodi:ry="7.50721550"
+      style="fill-rule:evenodd;stroke:#333333;stroke-width:3.125;fill:#7f7f7f"
+      sodipodi:type="arc"
+      d="m26.721 26.027a7.5072 7.5072 0 1 0 -15.015 0 7.5072 7.5072 0 1 0 15.015 0h-7.508z"
+      transform="translate(11.197 -15.014)"
+      sodipodi:cy="26.02666855"
+      sodipodi:cx="19.21338272"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+  />
+  <path
+      id="path597"
+      sodipodi:rx="7.50721550"
+      sodipodi:ry="7.50721550"
+      style="fill-rule:evenodd;stroke:#333333;stroke-width:3.125;fill:#7f7f7f"
+      sodipodi:type="arc"
+      d="m26.721 26.027a7.5072 7.5072 0 1 0 -15.015 0 7.5072 7.5072 0 1 0 15.015 0h-7.508z"
+      transform="translate(-6.871 23.412)"
+      sodipodi:cy="26.02666855"
+      sodipodi:cx="19.21338272"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+  />
+  <path
+      id="path595"
+      sodipodi:rx="7.50721550"
+      sodipodi:ry="7.50721550"
+      style="fill-rule:evenodd;stroke:#333333;stroke-width:3.125;fill:#7f7f7f"
+      sodipodi:type="arc"
+      d="m26.721 26.027a7.5072 7.5072 0 1 0 -15.015 0 7.5072 7.5072 0 1 0 15.015 0h-7.508z"
+      transform="translate(10.688 7.6345)"
+      sodipodi:cy="26.02666855"
+      sodipodi:cx="19.21338272"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+  />
+  <path
+      id="path596"
+      sodipodi:rx="7.50721550"
+      sodipodi:ry="7.50721550"
+      style="fill-rule:evenodd;stroke:#333333;stroke-width:2.5727;fill:#4c4c4c"
+      sodipodi:type="arc"
+      d="m26.721 26.027a7.5072 7.5072 0 1 0 -15.015 0 7.5072 7.5072 0 1 0 15.015 0h-7.508z"
+      transform="matrix(.72881 0 0 .72881 33.967 4.0043)"
+      sodipodi:cy="26.02666855"
+      sodipodi:cx="19.21338272"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+  />
+  <path
+      id="path600"
+      sodipodi:rx="7.50721550"
+      sodipodi:ry="7.50721550"
+      style="fill-rule:evenodd;stroke:#333333;stroke-width:3.125;fill:#7f7f7f"
+      sodipodi:type="arc"
+      d="m26.721 26.027a7.5072 7.5072 0 1 0 -15.015 0 7.5072 7.5072 0 1 0 15.015 0h-7.508z"
+      transform="translate(28.562 23.412)"
+      sodipodi:cy="26.02666855"
+      sodipodi:cx="19.21338272"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+  />
+  <path
+      id="path705"
+      style="stroke-linejoin:round;fill-rule:evenodd;stroke:#333333;stroke-linecap:round;stroke-width:1.293;fill:#333333"
+      d="m58.743 285.65zm-21.604-104.5l15.807 16.56 25.593-17.32 20.323 9.04 6.778 29.67 21.83-0.21 6.02-30.44 20.32-8.06 25.59 16.56 12.05-16.56-29.05-27.4c-74.441 68.27-138.77-36.96-74.829-80.986v-15.808l-7.527 3.764-23.334-14.834-16.119 13.237 14.613 24.931-8.279 20.326-28.516 4.73-0.088 21.61 29.356 7.53 8.092 19.76-18.63 23.9z"
+      sodipodi:nodetypes="ccccccccccccccccccccccccc"
+      transform="matrix(.15448 0 0 .15448 12.234 14.623)"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+  />
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >ftkalzium</dc:title
+        >
+        <dc:date
+          >2011-01-31T02:11:50</dc:date
+        >
+        <dc:description
+          >Originally uploaded by Danny Allen for OCAL 0.18 this icon is part of the flat theme</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/115429/ftkalzium-by-anonymous</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >Anonymous</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >flat</rdf:li
+            >
+            <rdf:li
+              >icon</rdf:li
+            >
+            <rdf:li
+              >theme</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
