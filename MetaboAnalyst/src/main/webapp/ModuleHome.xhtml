@@ -6,6 +6,7 @@
                 xmlns:f="http://java.sun.com/jsf/core"
                 xmlns:p="http://primefaces.org/ui"
                 template="/frags/_doc_template.xhtml">
+    <!--THIS IS OMIXPERT NOT WEGAN-->
     <ui:define name="metaInfo">
         <f:event type="preRenderView" listener="#{sessionBean1.registerPage('ModuleHome')}"/> 
     </ui:define>
@@ -26,34 +27,41 @@
                 <h2 style="margin-top: 1%; margin-left: 20px; font-size: 24px;">Select a module to explore:</h2>
                 <ui:include src="/frags/_bar_lines.xhtml" />
             </p:panelGrid>
-
+            
+<!--METABOLOMIXPERT-->
             <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/upload/ClusterUploadView.xhtml">
 <!--                <div class="card moduleButton">-->
                 <div id="corrBtn" class="card moduleButton tooltip" href="#{facesContext.externalContext.requestContextPath}/faces/upload/ClusterUploadView.xhtml">
                     <div class="card-horizontal">
                         <div class="img-square-wrapper">
-                            <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/icons/cluster_icon.png"></img>
+                            <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/try_icons/Molecule_icon_clip-art_88898_ftkalzium.svg"></img> 
+                            <!--icons/cluster_icon.png-->
                         </div>
                         <div class="card-body">
-                            <p class="card-text moduleTitle" style="margin-left: 110px; margin-bottom: 0px">Clustering and Visualization</p>
-                            <p class="card-text moduleText" style="margin-left: 20px;">Geospatial Mapping, Heatmaps, Venn Diagrams and Other Clustering Methods</p>
-                            <!--<p class="card-text">Heatmap and Regression Analysis</p>-->
+                            <p class="card-text moduleTitle" style="margin-left: 90px; margin-bottom: 0px">MetabolomiXpert</p>  
+                            <!--Clustering and Visualization-->
+                            <!--style="margin-left: 110px; margin-bottom: 0px"-->
+                            <p class="card-text moduleText" style="margin-left: 20px;"> </p>
+ <!--<p class="card-text">Heatmaps, Venn Diagrams, Other Clustering Methods</p>-->
                         </div>
                     </div>
                 </div> 
             </a></span>   
-            
+
+<!--TRANSCRIPTOMIXPERT-->            
             <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/upload/CaUploadView.xhtml">
-                <div id="corrBtn" class="card moduleButton tooltip" href="#{facesContext.externalContext.requestContextPath}/faces/upload/CaUploadView.xhtml">
-                   
+                <div id="corrBtn" class="card moduleButton tooltip" href="#{facesContext.externalContext.requestContextPath}/faces/upload/zTranscriptUploadView.xhtml">
+                   <!--/faces/upload/CaUploadView.xhtml-->
                     <div class="card-horizontal">
                         <div class="img-square-wrapper">
-                            <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/icons/ca_icon.png"></img>
+                            <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/try_icons/Arty_flower_silhouette_65234_Celtic-Knot-Mandala-3.svg"></img>
+                 <!--icons/ca_icon.png-->           
                         </div>
                         <div class="card-body">
-                            <p class="card-text moduleTitle" style="float: right; margin-right: 10px;">Correlation</p>
-                            <p class="card-text moduleText" style="float: right; margin-right: 10px;">Heatmap and Regression</p>
-                            <!--<p class="card-text">Heatmap and Regression Analysis</p>-->
+                            <p class="card-text moduleTitle" style="float: right; margin-right: 5px;">TranscriptomiXpert</p>
+                            <!--right; margin-right: 10px;"-->
+                            <p class="card-text moduleText" style="float: right; margin-right: 10px;"> </p>
+             <!--<p class="card-text">Heatmap and Regression Analysis</p>-->
                         </div>
                     </div>
                    
@@ -61,82 +69,97 @@
                  <!--<p:tooltip for="corrBtn" style="font-size: 11px;" value="Two variables will be tested for correlation, an independent variable and a dependent variable. Both must have numeric values." />-->
             </a></span>
 
+<!--GENOMIXPERT-->
             <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/upload/DispersalUploadView.xhtml">
                 <div class="card moduleButton">
                     <div class="card-horizontal">
                         <div class="img-square-wrapper">
-                            <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/icons/disp_icon.png"></img>
+                            <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/try_icons/ScreenshotBiological-Man-Silhouette_Man-in-DNA_71287.png"></img>
+                            <!--/resources/images/icons/disp_icon.png-->
                         </div>
                         <div class="card-body">
-                            <p class="card-text moduleTitle" style="float: right; margin-right: 10px;">Dispersal</p>
-                            <p class="card-text moduleText" style="margin-left: 10px;">Biogeographical, Beals Smoothing, and Beta Dispersal</p>
-                            <!--<p class="card-text">Heatmap and Regression Analysis</p>-->
+                            <p class="card-text moduleTitle" style="float: right; margin-right: 10px;">GenomiXpert</p>
+                             <!--right; margin-right: 10px; Dispersal-->
+                            <p class="card-text moduleText" style="margin-left: 10px;"> </p>
+                            <!--<p class="card-text">Biogeographical, Beals Smoothing, and Beta Dispersal</p>-->
                         </div>
                     </div>
                 </div> 
             </a></span>  
-            
+
+<!--PROTEOMIXPERT-->
             <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/upload/DiversityUploadView.xhtml">
                 <div class="card moduleButton">
                     <div class="card-horizontal">
                         <div class="img-square-wrapper">
-                            <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/icons/diversity_icon.png"></img>
+                            <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/try_icons/Plug_in_icon_in_gray_81002_1538300893.svg"></img>
+                            <!--icons/diversity_icon.png-->
                         </div>
                         <div class="card-body">
-                            <p class="card-text moduleTitle" style="float: right; margin-right: 10px;">Diversity</p>
-                            <p class="card-text moduleText" style="margin-left: 30px;">Alpha, Beta, Gamma Diversity and Other Species Data Analyses</p>
-                            <!--<p class="card-text">Heatmap and Regression Analysis</p>-->
+                            <p class="card-text moduleTitle" style="float: right; margin-right: 5px;">ProteomiXpert</p>
+                             <!--right; margin-right: 10px;">Diversity-->
+                            <p class="card-text moduleText" style="margin-left: 30px;"> </p>
+                            <!--<p class="card-text">Alpha, Beta, Gamma Diversity and Other Species Data Analyses</p>-->
                         </div>
                     </div>
                 </div> 
             </a></span>
 
+<!--MICROBIOMIXPERT-->
             <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/upload/OrdinationUploadView.xhtml">
                 <div class="card moduleButton">
                     <div class="card-horizontal">
                         <div class="img-square-wrapper">
-                            <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/icons/ord_icon.png"></img>
+                            <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/try_icons/digital_dice_Digital-dice-collection-vector-image_10844.svg"></img>
+                            <!--/resources/images/icons/ord_icon.png"></img>-->
                         </div>
                         <div class="card-body">
-                            <p class="card-text moduleTitle" style="float: right; margin-right: 10px;">Ordination</p>
-                            <p class="card-text moduleText" style="margin-left: 60px;">PCA, CA, NDMS, PCoA and Other Multivariate Plotting Techniques</p>
-                            <!--<p class="card-text">Heatmap and Regression Analysis</p>-->
+                            <p class="card-text moduleTitle" style="float: right; margin-right: 5px;">MicrobiomiXpert</p>
+                            <!--float: right; margin-right: 10px;">Ordination-->
+                            <p class="card-text moduleText" style="margin-left: 60px;"> </p>
+ <!--<p class="card-text">PCA, CA, NDMS, PCoA, Multivar Plotting Techniques</p>-->
                         </div>
                     </div>
                 </div> 
             </a></span>    
  
-
+<!--EXPOSOMIXPERT-->
             <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/upload/PlottingUploadView.xhtml">
                 <div class="card moduleButton">
                     <div class="card-horizontal">
                         <div class="img-square-wrapper">
-                            <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/icons/plot_icon.png"></img>
+                            <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/try_icons/dav1dp-meshed-gears_Meshed-gears_62918.svg"></img> 
+                            <!--/resources/images/icons/plot_icon.png"></img>--> 
                         </div>
                         <div class="card-body">
-                            <p class="card-text moduleTitle" style="float: right; margin-right: 10px;">Plotting</p>
-                            <p class="card-text moduleText">Line Graphs, Box Plots, and Other Traditional Plotting Methods</p>
-                            <!--<p class="card-text">Heatmap and Regression Analysis</p>-->
+                            <p class="card-text moduleTitle" style="float: right; margin-right: 10px;">ExposomiXpert</p>
+                            <!--float: right; margin-right: 10px;">Plotting-->
+                            <p class="card-text moduleText"> </p>
+<!--<p class="card-text">Line Graphs, Box Plots, Plotting Methods</p>-->
                         </div>
                     </div>
                 </div> 
             </a></span> 
             
-            <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/upload/DCAUploadView.xhtml">
+<!--STATISTICS-->
+            <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/upload/StatUploadView.xhtml">
+                     <!--/faces/upload/DCAUploadView.xhtml">-->
                 <div class="card moduleButton">
                     <div class="card-horizontal">
                         <div class="img-square-wrapper">
                             <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/icons/stat_icon.png"></img>
                         </div>
                         <div class="card-body">
-                            <p class="card-text moduleTitle" style="float: right; margin-right: 10px;">Statistics</p>
-                            <p class="card-text moduleText" style="margin-left: 100px;">Univariate, Multivariate, and Classification</p>
-                            <!--<p class="card-text">Heatmap and Regression Analysis</p>-->
+                            <p class="card-text moduleTitle" style="float: right; margin-right: 5px;">Statistics</p>
+                            <!--float: right; margin-right: 10px;">Statistics-->
+                            <p class="card-text moduleText" style="margin-left: 100px;"></p>
+<!--<p class="card-text">Univariate, Multivariate, and Classification</p>-->
                         </div>
                     </div>
                 </div> 
             </a></span>
-            
+
+<!--MULTIOMIXPERT-->
             <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/upload/TaxonomyUploadView.xhtml">
                 <div class="card moduleButton">
                     <div class="card-horizontal">
@@ -144,9 +167,10 @@
                             <img style="height:100px; width:100px; margin-left: 5px" src="#{facesContext.externalContext.requestContextPath}/resources/images/icons/taxa_icon.png"></img>
                         </div>
                         <div class="card-body">
-                            <p class="card-text moduleTitle" style="float: right; margin-right: 10px;" >Taxonomy</p>
-                            <p class="card-text moduleText" style="margin-left: 30px;">NCBI Database, Phylogenetic Trees and Relative Species Abundance</p>
-                            <!--<p class="card-text">Heatmap and Regression Analysis</p>-->
+                            <p class="card-text moduleTitle" style="float: right; margin-right: 5px;" >MultiomiXpert</p>
+                            <!--margin-right: 10px;" >Taxonomy-->
+                            <p class="card-text moduleText" style="margin-left: 30px;"> </p>
+<!--<p class="card-text">NCBI db, Phylogeny, Relative Species Abundance</p>-->
                         </div>
                     </div>
                 </div> 
@@ -154,3 +178,42 @@
         </h:panelGrid>
     </ui:define>
 </ui:composition>
+
+<!--In every module:
+Univariate Statistics
+Multivariate Statistics
+Clustering 
+-Outlier Detection
+Classification
+Biomarker Analysis
+Pathway analysis
+Molecule Set Enrichment Analysis-->
+
+
+<!--From MetaboAnalyst website:
+^B^ - bold
+^h^ - hyperlinked
+STATISTICS section:
+^B^Univariate Analysis^B^
+- ^h^Fold Change Analysis^h^
+- ^h^T-tests^h^
+- ^h^Volcano Plot^h^
+- One-way Analysis of Variance (ANOVA)
+- ^h^Correlation Heatmaps^h^
+- ^h^Pattern Search^h^
+- ^h^Correlation Networks (DSPC)^h^
+^B^Chemometric Analysis^B^
+- ^h^Principle Component Analysis (PCA)^h^
+- ^h^Partial Least Squares - Discriminant Analysis (PLS-DA)^h^
+- ^h^Sparse Partial Least Squares - Discriminant Analysis (sPLS-DA)^h^
+- ^h^Orthogonal Partial Least Squares - Discriminant Analysis (orthoPLS-DA)^h^
+^B^Cluster Analysis^B^
+Hierarchical: 
+- ^h^Dendrogram^h^
+- ^h^Heatmaps^h^
+Partitioning:
+- ^h^k-means^h^
+- ^h^Self-Organizing Maps (SOM)^h^
+^B^Classification & Feature Selection^B^
+- ^h^Random Forest^h^
+- ^h^Support Vector Machine (SVM)^h^-->
