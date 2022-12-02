@@ -11,10 +11,36 @@ ordination_files <- c("ord_nmds", "ord_pcoa", "ord_cia", "ord_dca", "ord_anosim"
 
 diversity_files <- c("div_divindices","div_rarefaction", "div_abundance_dist", "div_accumulation_model", "div_taxonomic", "div_fd", "div_unseen");
 
-hub_files <- c()
+
 taxonomy_files <- c();
 cluster_files <- c();
 general_anot_files <- "general_anot_utils";
+
+hub_files <- #unique( 
+c(
+#         ordination_files,
+          "ord_nmds", "ord_pcoa", "ord_cia", "ord_dca", "ord_anosim", "ord_rda", "ord_bray", "ord_cca", "ord_ca", "ord_dca",
+#         correlation_files,
+          "correlation_linear", "correlation_penalized", "correlation_polynomial", "correlation_ml", "correlation_multivariate", "correlation_SVM", "correlation_RF", "correlation_logistic",
+#         biomarker_power_files,
+          "biomarker_utils", "power_utils",
+#         enrich_files, 
+          "enrich_graphics","enrich_mset","enrich_name_match","enrich_stats", 
+#         pathway_files, 
+          "enrich_path_kegg","enrich_path_stats",
+#         integmex_files,
+           "enrich_integ",
+#         network_files,
+           "networks", "gene_fun_utils",
+#         metaanal_files, 
+           "meta_methods", "meta_data_utils",
+#         mummichog_files,
+           "mummichog",
+#         time_files
+           "time_asca_heatmap2","time_pca_anova2", "time_mb"
+# )
+);
+
 
 enrich_files <- c("enrich_graphics","enrich_mset","enrich_name_match","enrich_stats");
 pathway_files <- c("enrich_mset","enrich_stats","enrich_name_match","enrich_path_graphics","enrich_path_kegg","enrich_path_stats")
@@ -28,6 +54,8 @@ other_files <- c("others_batch_check", "others_lipomics", "enrich_name_match");
 nmds_files <- c("test-Vegan", "dispersal", "plotting");
 
 nmds_files <- c("test-Vegan","Dispersal");
+
+
 LoadScripts <- function(module.nm = "nmds"){
     file.sources <- "";
 
