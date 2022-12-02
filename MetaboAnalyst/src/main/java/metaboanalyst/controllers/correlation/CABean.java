@@ -193,9 +193,9 @@ public class CABean implements Serializable {
                 " ", " ", " ",
                 false,"NULL", false,
                 "NULL",
-                sb.getCurrentImage("corr_logistic1"), "png", 72);
+                sb.getCurrentImage("corr_log_eff"), "png", 72);
         CAUtils.PlotLogisticROCCA(sb, "multinomial", "NULL", " ",
-                sb.getCurrentImage("corr_logisticROC"), "png", 72);
+                sb.getCurrentImage("corr_log_roc"), "png", 72);
     } 
     
 }

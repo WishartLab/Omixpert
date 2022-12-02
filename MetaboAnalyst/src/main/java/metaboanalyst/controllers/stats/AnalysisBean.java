@@ -36,6 +36,9 @@ public class AnalysisBean implements Serializable {
             if (!FacesContext.getCurrentInstance().isPostback()) {
                 //sb.registerPage(pageID);
                 switch (pageID) {
+                    case "PCA":
+                        doDefaultPCA();
+                        break;
                     case "ANOVA":
                         doDefaultANOVA();
                         break;

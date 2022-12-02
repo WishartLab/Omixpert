@@ -615,14 +615,17 @@ public static boolean PlotLinearResidFitCA(SessionBean1 sb,
 // LOGISTIC   
     
         public static void CreateLogisticModel(SessionBean1 sb,
-                String facA, String predtext, String type,
+                String facA, String predtext, 
+//                Boolean data,
+                String type,
                 String preference, String ordertext) {
         try {
             RConnection RC = sb.getRConnection();
 //            String rCommand = "log.reg.anal(NA)";
             String rCommand = "log.reg.anal(NA" + ", \"" 
                     + facA + "\", \"" 
-                    + predtext + "\", \"" 
+                    + predtext + "\", \""
+//                    + data + "\", \"" 
                     + type + "\", \"" 
                     + preference + "\", \"" 
                     + ordertext + "\" )";

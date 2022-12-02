@@ -606,6 +606,8 @@ public class DataUtils {
                     addClusterNodes(naviTree); 
                 } else if (type.equalsIgnoreCase("taxon")) {
                     addClusterNodes(naviTree);  
+                } else if (type.equalsIgnoreCase("Hub")) {
+                    addClusterNodes(naviTree);  
                 } else {
                     System.out.println("You need to define the navigation tree for this analysis type: " + type);
                 }

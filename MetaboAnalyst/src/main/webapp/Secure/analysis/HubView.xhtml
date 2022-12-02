@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui"
+                template="/frags/_doc_template.xhtml">
+    <!--THIS IS OMIXPERT NOT WEGAN-->
+    <ui:define name="metaInfo">
+        <f:event type="preRenderView" listener="#{sessionBean1.registerPage('Hub')}"/> 
+    </ui:define>
+    <h:head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="css/global.css"></link>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"></link>
+        <script type='text/javascript' src="/bootstrap.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/> 
+    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </h:head>
+    <ui:define name="content">
+        
+        <h:panelGrid style="padding:5px 20px 20px 20px; font-size: 12px; line-height: 23px; width:100%; align-items: center">
+
+            <p:panelGrid>
+                <h2 style="margin-top: 1%; margin-left: 20px; font-size: 24px;">Select a module to explore:</h2>
+                <ui:include src="/frags/_bar_lines.xhtml" />
+            </p:panelGrid>
+            
+<!--STATISTICS-->
+            <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/analysis/StatisticsPageView.xhtml">
+<!--                <div class="card moduleButton">-->
+                <div id="corrBtn" class="card moduleButton tooltip" href="#{facesContext.externalContext.requestContextPath}/faces/analysis/StatisticsPageView.xhtml">
+                    <div class="card-horizontal">
+<!--                        <div class="img-square-wrapper">
+                            <img style="height:100px; width:100px; margin-left: 5px" src="hash{facesContext.externalContext.requestContextPath}/resources/images/try_icons/Molecule_icon_clip-art_88898_ftkalzium.svg"></img> 
+                        </div>-->
+                        <div class="card-body">
+                            <p class="card-text moduleTitle" style="margin-left: 90px; margin-bottom: 0px">Statistics (Clus) </p>
+                            <p class="card-text moduleText" style="margin-left: 20px;"> </p>
+                            <p class="card-text">Correlation, Univariate (T-tests, ANOVA, Fold Change, Volcano Plot), Regression (OLS, GLM, Machine Learning) </p>
+                            
+                            
+                            <!--Clustering and Visualization-->
+                            <!--style="margin-left: 110px; margin-bottom: 0px"-->
+                            <p class="card-text moduleText" style="margin-left: 20px;"> </p>
+ <!--<p class="card-text">Heatmaps, Venn Diagrams, Other Clustering Methods</p>-->
+                        </div>
+                    </div>
+                </div> 
+            </a></span>
+
+<!--AGGREGATION-->
+            <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/analysis/AggregationPageView.xhtml">
+<!--                <div class="card moduleButton">-->
+                <div id="corrBtn" class="card moduleButton tooltip" href="#{facesContext.externalContext.requestContextPath}/faces/analysis/AggregationPageView.xhtml">
+                    <div class="card-horizontal">
+<!--                        <div class="img-square-wrapper">
+                            <img style="height:100px; width:100px; margin-left: 5px" src="hash{facesContext.externalContext.requestContextPath}/resources/images/try_icons/Molecule_icon_clip-art_88898_ftkalzium.svg"></img> 
+                        </div>-->
+                        <div class="card-body">
+                            <p class="card-text moduleTitle" style="margin-left: 90px; margin-bottom: 0px">Aggregation</p>
+                            <p class="card-text moduleText" style="margin-left: 20px;"> </p>
+                            <p class="card-text"> (P)rincipal (C)omponent (A)nalysis, (P)artial (L)east (S)quares (PLS-(D)iscriminant (A)nalysis, sPLSDA, orthoPLSDA), Clustering (Hierarchical, Partitional)  </p>
+                            
+                            
+                            <!--Clustering and Visualization-->
+                            <!--style="margin-left: 110px; margin-bottom: 0px"-->
+                            <p class="card-text moduleText" style="margin-left: 20px;"> </p>
+ <!--<p class="card-text">Heatmaps, Venn Diagrams, Other Clustering Methods</p>-->
+                        </div>
+                    </div>
+                </div> 
+            </a></span>
+
+<!--CLASSIFICATION-->
+            <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/analysis/RFView.xhtml">
+<!--                <div class="card moduleButton">-->
+                <div id="corrBtn" class="card moduleButton tooltip" href="#{facesContext.externalContext.requestContextPath}/faces/analysis/RFView.xhtml">
+                    <div class="card-horizontal">
+<!--                        <div class="img-square-wrapper">
+                            <img style="height:100px; width:100px; margin-left: 5px" src="hash{facesContext.externalContext.requestContextPath}/resources/images/try_icons/Molecule_icon_clip-art_88898_ftkalzium.svg"></img> 
+                        </div>-->
+                        <div class="card-body">
+                            <p class="card-text moduleTitle" style="margin-left: 90px; margin-bottom: 0px">Classification</p>
+                            <p class="card-text moduleText" style="margin-left: 20px;"> </p>
+                            <p class="card-text"> Random Forest (RF), Support Vector Machine (SVM)  </p>
+                            
+                            <!--Clustering and Visualization-->
+                            <!--style="margin-left: 110px; margin-bottom: 0px"-->
+                            <p class="card-text moduleText" style="margin-left: 20px;"> </p>
+ <!--<p class="card-text">Heatmaps, Venn Diagrams, Other Clustering Methods</p>-->
+                        </div>
+                    </div>
+                </div> 
+            </a></span> 
+
+<!--BIOMARKER-->
+            <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/roc/AnalysisView.xhtml">
+<!--                <div class="card moduleButton">-->
+                <div id="corrBtn" class="card moduleButton tooltip" href="#{facesContext.externalContext.requestContextPath}/faces/roc/AnalysisView.xhtml">
+                    <div class="card-horizontal">
+<!--                        <div class="img-square-wrapper">
+                            <img style="height:100px; width:100px; margin-left: 5px" src="hash{facesContext.externalContext.requestContextPath}/resources/images/try_icons/Molecule_icon_clip-art_88898_ftkalzium.svg"></img> 
+                        </div>-->
+                        <div class="card-body">
+                            <p class="card-text moduleTitle" style="margin-left: 90px; margin-bottom: 0px">Biomarker Analysis</p>
+                            <p class="card-text moduleText" style="margin-left: 20px;"> </p>
+                            <p class="card-text"> Feature Selection, ROC (Univariate, Multivariate) </p>
+                            
+                            <!--Clustering and Visualization-->
+                            <!--style="margin-left: 110px; margin-bottom: 0px"-->
+                            <p class="card-text moduleText" style="margin-left: 20px;"> </p>
+ <!--<p class="card-text">Heatmaps, Venn Diagrams, Other Clustering Methods</p>-->
+                        </div>
+                    </div>
+                </div> 
+            </a></span> 
+
+<!--ENRICHMENT-->
+            <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/enrichment/ParamView.xhtml">
+<!--                <div class="card moduleButton">-->
+                <div id="corrBtn" class="card moduleButton tooltip" href="#{facesContext.externalContext.requestContextPath}/faces/enrichment/ParamView.xhtml">
+                    <div class="card-horizontal">
+<!--                        <div class="img-square-wrapper">
+                            <img style="height:100px; width:100px; margin-left: 5px" src="hash{facesContext.externalContext.requestContextPath}/resources/images/try_icons/Molecule_icon_clip-art_88898_ftkalzium.svg"></img> 
+                        </div>-->
+                        <div class="card-body">
+                            <p class="card-text moduleTitle" style="margin-left: 90px; margin-bottom: 0px">Enrichment</p>
+                            <p class="card-text moduleText" style="margin-left: 20px;"> </p>
+                            <p class="card-text"> Molecule Set Enrichment Analysis (Gene Set, Protein Set, Metabolite Set) </p>
+                            
+                            <!--Clustering and Visualization-->
+                            <!--style="margin-left: 110px; margin-bottom: 0px"-->
+                            <p class="card-text moduleText" style="margin-left: 20px;"> </p>
+ <!--<p class="card-text">Heatmaps, Venn Diagrams, Other Clustering Methods</p>-->
+                        </div>
+                    </div>
+                </div> 
+            </a></span>   
+ 
+<!--PATHWAY-->
+            <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/pathway/ParamView.xhtml">
+<!--                <div class="card moduleButton">-->
+                <div id="corrBtn" class="card moduleButton tooltip" href="#{facesContext.externalContext.requestContextPath}/faces/pathway/ParamView.xhtml">
+                    <div class="card-horizontal">
+<!--                        <div class="img-square-wrapper">
+                            <img style="height:100px; width:100px; margin-left: 5px" src="hash{facesContext.externalContext.requestContextPath}/resources/images/try_icons/Molecule_icon_clip-art_88898_ftkalzium.svg"></img> 
+                        </div>-->
+                        <div class="card-body">
+                            <p class="card-text moduleTitle" style="margin-left: 90px; margin-bottom: 0px">Pathway</p>
+                            <p class="card-text moduleText" style="margin-left: 20px;"> </p>
+                            <p class="card-text"> Pathway Analysis (HMDB integtration, ChemFONT, KEGG) </p>
+                            
+                            <!--Clustering and Visualization-->
+                            <!--style="margin-left: 110px; margin-bottom: 0px"-->
+                            <p class="card-text moduleText" style="margin-left: 20px;"> </p>
+ <!--<p class="card-text">Heatmaps, Venn Diagrams, Other Clustering Methods</p>-->
+                        </div>
+                    </div>
+                </div> 
+            </a></span>   
+
+
+        </h:panelGrid>
+    </ui:define>
+</ui:composition>
+
+<!--In every module:
+Univariate Statistics
+ - Correlation?
+Multivariate Statistics
+- Correlation ? 
+Clustering 
+-Outlier Detection
+Classification
+Biomarker Analysis
+Pathway analysis
+Molecule Set Enrichment Analysis-->

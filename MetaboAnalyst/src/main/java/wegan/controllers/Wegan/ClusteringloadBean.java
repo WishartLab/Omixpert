@@ -111,8 +111,9 @@ public class ClusteringloadBean implements Serializable {
         if (dataFormat.endsWith("p")) {
             paired = true;
         }
-
-        if (sb.doLogin(dataType, "cluster", false, paired)) {
+        
+//        if (sb.doLogin(dataType, "cluster", false, paired)) {
+        if (sb.doLogin(dataType, "Hub", false, paired)) {
             try {
                 RConnection RC = sb.getRConnection();
                 String fileName = DataUtils.uploadFile(dataFile, sb, null, ab.isOnPublicServer());
@@ -346,7 +347,8 @@ public class ClusteringloadBean implements Serializable {
             sb.updateMsg("Error", "Unknown data selected?");
             return null;
         }
-        if (!sb.doLogin(dataType, "cluster", false, paired)) {
+//        if (!sb.doLogin(dataType, "cluster", false, paired)) {        
+        if (!sb.doLogin(dataType, "Hub", false, paired)) {
             //sb.updateMsg("Error", "No login return null?");
             return null;
         }

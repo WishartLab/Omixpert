@@ -11,6 +11,7 @@ ordination_files <- c("ord_nmds", "ord_pcoa", "ord_cia", "ord_dca", "ord_anosim"
 
 diversity_files <- c("div_divindices","div_rarefaction", "div_abundance_dist", "div_accumulation_model", "div_taxonomic", "div_fd", "div_unseen");
 
+hub_files <- c()
 taxonomy_files <- c();
 cluster_files <- c();
 general_anot_files <- "general_anot_utils";
@@ -74,6 +75,9 @@ LoadScripts <- function(module.nm = "nmds"){
     
     }else if(module.nm == "taxon"){
         file.sources <- c(general_files, general_stat_files, stats_files, taxonomy_files);
+
+    }else if(module.nm == "Hub"){
+        file.sources <- c(general_files, general_stat_files, stats_files, hub_files);
 
     }else{
         print(paste("Unknown module code: ", module.nm));

@@ -93,7 +93,6 @@
             <to-view-id>/Secure/ordination/RDAView.xhtml</to-view-id>
             <redirect/>
         </navigation-case>  
-          
         <navigation-case>
             <from-outcome>CCA</from-outcome>
             <to-view-id>/Secure/ordination/CCAView.xhtml</to-view-id>
@@ -248,6 +247,24 @@
             <to-view-id>/Secure/process/SanityCheck.xhtml</to-view-id>
             <redirect/>
         </navigation-case> 
+        
+        
+        <!--OMIXPERT FUNCTIONS-->
+        <navigation-case>
+            <from-outcome>Hub</from-outcome>
+            <to-view-id>/Secure/analysis/HubView.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>StatisticsPage</from-outcome>
+            <to-view-id>/Secure/analysis/StatisticsPageView.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>AggregationPage</from-outcome>
+            <to-view-id>/Secure/analysis/AggregationPageView.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
         
         
         <!--DIVERSITY FUNCTIONS-->
@@ -438,6 +455,8 @@
             <to-view-id>/Secure/analysis/AnovaView.xhtml</to-view-id>
             <redirect/>
         </navigation-case>
+        
+       <!--CORRELATION MODULE FUNCTIONS-->       
         <navigation-case>
             <from-outcome>Correlations</from-outcome>
             <to-view-id>/Secure/correlation/CorrelationView.xhtml</to-view-id>
@@ -483,6 +502,7 @@
             <to-view-id>/Secure/correlation/PolynomialView.xhtml</to-view-id>
             <redirect/>
         </navigation-case>
+        
         <navigation-case>
             <from-outcome>PatternHunter</from-outcome>
             <to-view-id>/Secure/analysis/PatternView.xhtml</to-view-id>

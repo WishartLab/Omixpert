@@ -7,7 +7,8 @@
                 xmlns:p="http://primefaces.org/ui"
                 template="/frags/_anal_template.xhtml">
     <ui:define name="metaInfo">
-        <f:event type="preRenderView" listener="#{sessionBean1.setAnalType('stat')}"/> 
+        <!--<f:event type="preRenderView" listener="hash{sessionBean1.setAnalType('stat')}"/>--> 
+        <f:event type="preRenderView" listener="#{sessionBean1.setAnalType('Hun')}"/> 
         <f:event type="preRenderView" listener="#{sessionBean1.registerPage('Upload')}"/> 
     </ui:define>
     <ui:define name="content">
@@ -20,7 +21,7 @@
                     <h2 style="margin-top: 10px; margin-bottom: 4px">Data table: Plain text file (.csv or .txt)</h2>
                     <h:panelGrid columns="2" style="padding: 10px">
                         <p:outputLabel style="font-size:14px; font-weight: bold" value="Data File:"/>
-                        <p:fileUpload value="#{uploader.dataFile}" mode="simple"/>
+                         <p:fileUpload value="#{Statload.dataFile}" mode="simple"/>
                     </h:panelGrid>                   
                     <h:panelGrid columns="3" style="padding: 10px; margin-left: 40px">
                         <p:outputLabel style="font-size:12px; font-weight: bold" value="Format:"/>
@@ -60,7 +61,7 @@
                     <h:panelGrid>
                         Theoretical data set inspired by wolf and elk interactions at Yellowstone National Park, USA. Data consists of counts of wolves and elk (variables/columns) at different sampling times over a 4 year period (samples/rows). Both columns and rows are labeled.     
                     </h:panelGrid>
-                    <p:radioButton for="customRadio" itemIndex="3"/>
+                    <p:radioButton for="customRadio" itemIndex="2"/>
                     <p:outputLabel style="font-size:12px; font-weight: bold" value="BCI"/>
                     <h:panelGrid>
                         Barro Colorado Island tree species counts. Data consists of 225 species (variables/columns) and 50 1-hectare plots of land (samples/rows). Species are labeled, but land plots are not. (<a href="https://rdrr.io/cran/vegan/man/BCI.html">ref.</a>)                                       
