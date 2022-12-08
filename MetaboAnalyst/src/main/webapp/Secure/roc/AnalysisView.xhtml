@@ -7,8 +7,8 @@
                 xmlns:p="http://primefaces.org/ui"
                 template="/frags/_anal_template.xhtml">
     <ui:define name="metaInfo">
-        <f:event type="preRenderView" listener="#{sessionBean1.registerPage('ROC Analysis')}"/> 
-        <!--<f:event type="preRenderView" listener="hash{sessionBean1.registerPage('rocparam')}"/>-->      
+        <!--<f:event type="preRenderView" listener="hash{sessionBean1.registerPage('ROC Analysis')}"/>--> 
+        <f:event type="preRenderView" listener="#{sessionBean1.registerPage('rocparam')}"/>      
     </ui:define>
     <ui:define name="content">
         <h:form>
