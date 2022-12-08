@@ -483,8 +483,8 @@
             <redirect/>
         </navigation-case>
         <navigation-case>
-            <from-outcome>RFCorrelation</from-outcome>
-            <to-view-id>/Secure/correlation/RFCorrelationView.xhtml</to-view-id>
+            <from-outcome>ANNCorrelation</from-outcome>
+            <to-view-id>/Secure/correlation/ANNCorrelationView.xhtml</to-view-id>
             <redirect/>
         </navigation-case>
         <navigation-case>
@@ -503,6 +503,7 @@
             <redirect/>
         </navigation-case>
         
+        <!--GENERAL STATISTICS-->
         <navigation-case>
             <from-outcome>PatternHunter</from-outcome>
             <to-view-id>/Secure/analysis/PatternView.xhtml</to-view-id>
@@ -579,6 +580,7 @@
             <redirect/>
         </navigation-case>-->
         
+        <!--ENRICHMENT-->
         <navigation-case>
             <from-outcome>msetssp</from-outcome>
             <to-view-id>/Secure/enrichment/SspProfileView.xhtml</to-view-id>
@@ -634,6 +636,7 @@
             <to-view-id>/Secure/time/TimeCourseView.xhtml</to-view-id>
             <redirect/>
         </navigation-case> 
+        <!--PATHWAY-->
         <navigation-case>
             <from-outcome>pathparam</from-outcome>
             <to-view-id>/Secure/pathway/ParamView.xhtml</to-view-id>
@@ -674,6 +677,7 @@
             <to-view-id>/Secure/utils/PowerCurveView.xhtml</to-view-id>
             <redirect/>
         </navigation-case>
+        <!--ROC-->
         <navigation-case>
             <from-outcome>rocparam</from-outcome>
             <to-view-id>/Secure/roc/AnalysisView.xhtml</to-view-id>
@@ -724,6 +728,7 @@
             <to-view-id>/Secure/roc/RocTestView.xhtml</to-view-id>
             <redirect/>
         </navigation-case>
+        <!--PATHWAY-->
         <navigation-case>
             <from-outcome>ID map</from-outcome>
             <to-view-id>/Secure/pathinteg/IntegMapView.xhtml</to-view-id>
@@ -744,6 +749,7 @@
             <to-view-id>/Secure/pathinteg/IntegResultView.xhtml</to-view-id>
             <redirect/>
         </navigation-case>  
+        <!--NETWORK-->
         <navigation-case>
             <from-outcome>MnetID map</from-outcome>
             <to-view-id>/Secure/network/MnetMapView.xhtml</to-view-id>
@@ -774,6 +780,7 @@
             <to-view-id>/Secure/network/MetaboNetView.xhtml</to-view-id>
             <redirect/>
         </navigation-case>
+        <!--METADATA-->
         <navigation-case>
             <from-outcome>metadata</from-outcome>
             <to-view-id>/upload/MetaLoadView.xhtml</to-view-id>
