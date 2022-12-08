@@ -8,7 +8,7 @@
                 template="/frags/_doc_template.xhtml">
     <!--THIS IS OMIXPERT NOT WEGAN-->
     <ui:define name="metaInfo">
-        <f:event type="preRenderView" listener="#{sessionBean1.registerPage('Hub')}"/> 
+       
     </ui:define>
     <h:head>
         <link rel="stylesheet" href="css/bootstrap.min.css"></link>
@@ -39,7 +39,7 @@
                         <div class="card-body">
                             <p class="card-text moduleTitle" style="margin-left: 90px; margin-bottom: 0px">Statistics (Clus) </p>
                             <p class="card-text moduleText" style="margin-left: 20px;"> </p>
-                            <p class="card-text">Correlation, Univariate (T-tests, ANOVA, Fold Change, Volcano Plot), Regression (OLS, GLM, Machine Learning) </p>
+                            <p class="card-text">Correlation, Univariate (T-tests, ANOVA, Fold Change), Regression (OLS, GLM, Machine Learning) </p>
                             
                             
                             <!--Clustering and Visualization-->
@@ -62,7 +62,7 @@
                         <div class="card-body">
                             <p class="card-text moduleTitle" style="margin-left: 90px; margin-bottom: 0px">Aggregation</p>
                             <p class="card-text moduleText" style="margin-left: 20px;"> </p>
-                            <p class="card-text"> (P)rincipal (C)omponent (A)nalysis, (P)artial (L)east (S)quares (PLS-(D)iscriminant (A)nalysis, sPLSDA, orthoPLSDA), Clustering (Hierarchical, Partitional)  </p>
+                            <p class="card-text"> Dimension Reduction (PCA, PLS-DA, sPLSDA, orthoPLSDA), Clustering (Hierarchical, Partitional)  </p>
                             
                             
                             <!--Clustering and Visualization-->
@@ -97,17 +97,22 @@
             </a></span> 
 
 <!--BIOMARKER-->
-            <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/roc/AnalysisView.xhtml">
+            <!--<span><a style="text-decoration:none" href="hash{facesContext.externalContext.requestContextPath}/faces/upload/RocUploadView.xhtml">-->
+            <!--<span><a style="text-decoration:none" href="hash{facesContext.externalContext.requestContextPath}/faces/roc/AnalysisView.xhtml">-->      
+            <span> 
+                     <h:commandLink id="corrBtn" class="card moduleButton tooltip"  style="margin-left: 25px" action="rocparam" value="Biomarker"/>
+                    
 <!--                <div class="card moduleButton">-->
-                <div id="corrBtn" class="card moduleButton tooltip" href="#{facesContext.externalContext.requestContextPath}/faces/roc/AnalysisView.xhtml">
+                <!--<div id="corrBtn" class="card moduleButton tooltip" href="hash{facesContext.externalContext.requestContextPath}/faces/upload/RocUploadView.xhtml">-->
+                <div id="corrBtn" class="card moduleButton tooltip" href="#{facesContext.externalContext.requestContextPath}/faces/roc/AnalysisView.xhtml">     
                     <div class="card-horizontal">
 <!--                        <div class="img-square-wrapper">
                             <img style="height:100px; width:100px; margin-left: 5px" src="hash{facesContext.externalContext.requestContextPath}/resources/images/try_icons/Molecule_icon_clip-art_88898_ftkalzium.svg"></img> 
                         </div>-->
                         <div class="card-body">
-                            <p class="card-text moduleTitle" style="margin-left: 90px; margin-bottom: 0px">Biomarker Analysis</p>
+                            <p class="card-text moduleTitle" style="margin-left: 90px; margin-bottom: 0px">Biomarker</p>
                             <p class="card-text moduleText" style="margin-left: 20px;"> </p>
-                            <p class="card-text"> Feature Selection, ROC (Univariate, Multivariate) </p>
+                            <p class="card-text"> Univariate ROC, Feature Selection (Manual, Multivariate - RF, SVM, PLS-DA) </p>
                             
                             <!--Clustering and Visualization-->
                             <!--style="margin-left: 110px; margin-bottom: 0px"-->
@@ -116,7 +121,8 @@
                         </div>
                     </div>
                 </div> 
-            </a></span> 
+            <!--</a>-->
+            </span> 
 
 <!--ENRICHMENT-->
             <span><a style="text-decoration:none" href="#{facesContext.externalContext.requestContextPath}/faces/enrichment/ParamView.xhtml">
@@ -129,7 +135,7 @@
                         <div class="card-body">
                             <p class="card-text moduleTitle" style="margin-left: 90px; margin-bottom: 0px">Enrichment</p>
                             <p class="card-text moduleText" style="margin-left: 20px;"> </p>
-                            <p class="card-text"> Molecule Set Enrichment Analysis (Gene Set, Protein Set, Metabolite Set) </p>
+                            <p class="card-text"> Enrichment (Molecule Set Enrichment Analysis) </p>
                             
                             <!--Clustering and Visualization-->
                             <!--style="margin-left: 110px; margin-bottom: 0px"-->
@@ -151,7 +157,7 @@
                         <div class="card-body">
                             <p class="card-text moduleTitle" style="margin-left: 90px; margin-bottom: 0px">Pathway</p>
                             <p class="card-text moduleText" style="margin-left: 20px;"> </p>
-                            <p class="card-text"> Pathway Analysis (HMDB integtration, ChemFONT, KEGG) </p>
+                            <p class="card-text"> Pathway (KEGG, HMDB integtration) </p>
                             
                             <!--Clustering and Visualization-->
                             <!--style="margin-left: 110px; margin-bottom: 0px"-->
