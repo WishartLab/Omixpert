@@ -7,7 +7,9 @@
   padding: 0px;
 }*/
 
+/*OMIXPERT*/
 .navBar {
+    /*dark purple*/
     background-color: #694872;
     overflow: hidden;
     width: 300px;
@@ -29,7 +31,7 @@
     background-color: grey;
 }
 
-
+/*OMIXPERT*/
 #homebars{
     position: relative; 
     white-space: nowrap; 
@@ -38,16 +40,19 @@
     margin-top: 4%;
     width:50%;
     height:20%;
+    /*dark purple*/
     background-color: #694872;
     float: right;
     color: white;
     
 }
 
-
+/*OMIXPERT*/
 .moduleButton {
 
+    /*lightest pale violet*/
     background-color: #FDF7FF;
+    /*dark purple*/
     border: 2px solid #694872;
     border-color: #694872;
     display: inline-block;
@@ -80,28 +85,39 @@
     flex: 1 1 auto;
 }
 
+/*OMIXPERT*/
+/*wegan: was green  #8cbd48*/
 .moduleButton:hover {
-    background-color: #8cbd48;
+    /*light pale violet*/
+    background-color: #D4A6E1;
     color: black;
 }
 
+/*OMIXPERT*/
 .p-tab-nav {
+    /*lighter pale violet*/
     background-color: #E7C9F0!important;
+    /*dark purple*/
     border: 2px solid #694872 !important;
     border-color: #694872 !important;
     color: white;
 }
 
+/*OMIXPERT*/
 .p-tab-nav.ui-state-active,
 .p-tab-nav.ui-state-hover {
+    /*light pale violet*/
     background-color: #D4A6E1 !important;
+    /*dark purple*/
     border: 2px solid #694872 !important;
     border-color: #694872 !important;
     color: white;
 }
 
+/*OMIXPERT*/
 .resultsBar {
     height: 24px;
+    /*DARK PURPLE*/
     background-color: #694872;
     width: 100%;
     font-size: 16px;
@@ -116,11 +132,14 @@
 
 .subResultsBar {
     height: 0.05px !important;
-    background-color: #8cbd48;
+    /*wegan: lightgreen, #8cbd48 */
+    /*light pale violet*/
+    background-color: #D4A6E1;
     width: 100%;
 }
 
 .updateButton {
+    /*lightblue*/
     background: #75bafb;
     border: none;
     color: black;
@@ -193,6 +212,7 @@
             height: 20%;
             float: right;
             margin-top: 4%;
+            /*lightblue*/
             background-color: #75bafb;
             display: table;
             position: relative;
@@ -215,6 +235,7 @@
                 display: table-cell;
                 vertical-align: middle;
                 &:hover {
+                    /*lightblue*/
                     color: #75bafb;
                     text-decoration: none;
                 }
@@ -235,6 +256,7 @@
 }
 
 .graphicsButton {
+    /*yellow*/
     background: #fae12e !important;
     border: 5px #fae12e !important;
     color: black !important;
@@ -247,7 +269,9 @@
 }
 
 .bgdButton {
+    /*lightblue*/
     background: #75bafb !important;
+    /*dark teal*/
     border: 5px #3a5d7d !important;
     color: black !important;
     text-shadow: none !important;
@@ -259,6 +283,7 @@
 }
 
 .updateButton {
+    /*lightblue*/
     background: #75bafb !important;
     border: 5px #75bafb !important;
     color: black !important;
@@ -271,6 +296,7 @@
 }
 
 .submitButton {
+    /*lightblue*/
     background: #75bafb !important;
     border: 5px #75bafb !important;
     color: black !important;
@@ -283,6 +309,7 @@
 }
 
 .flipButton {
+    /*yellow*/
     background: #fae12e !important;
     border: 5px #fae12e !important;
     color: black !important;
@@ -294,6 +321,7 @@
     font-bold: false;
 }
 .exportButton {
+    /*lightblue*/
     background: #75bafb !important;
     border: 5px #75bafb!important;
     color: black !important;
@@ -306,6 +334,7 @@
 }
 
 .normButton {
+    /*lightblue*/
     background: #75bafb !important;
     border: 5px #75bafb !important;
     color: black !important;
@@ -318,6 +347,7 @@
 }
 
 .autoNormButton {
+    /*lightgreen*/
     background: #8cbd48 !important;
     border: 5px #8cbd48 !important;
     color: black !important;
@@ -330,6 +360,7 @@
 }
 
 .sanityButton {
+    /*lightgreen*/
     background: #8cbd48 !important;
     border: 5px #8cbd48 !important;
     color: black !important;
@@ -343,6 +374,7 @@
 }
 
 .helpButton{
+    /*darkblue*/
     background: #502efa !important; 
     border: 5px #502efa !important; 
     color: black !important;
@@ -390,6 +422,7 @@ h2 {
 }
 
 .myLayoutStyle .ui-layout-unit-content {
+    /*lightblue*/
     background: #75bafb;
 }
 
@@ -427,7 +460,9 @@ h2 {
 
 .ui-widget-header {
     padding-left: 10px !important;
+    /*2779aa teal*/
     /*color: #2779aa !important;*/
+    /*lightblue*/
     background-color: #75bafb !important;
     color: #75bafb !important;
 }
@@ -466,12 +501,14 @@ h2 {
 
 a.changeBlue:hover {
     /* change to blue on mouseover */
+    /*orange??*/
     color: #ffae20;
     font-size: 110%;
     text-decoration: underline;
 }
 
 .myui-state-default {
+    /*lightbrightblue*/
     color: #0099ff;
 }
 
@@ -481,6 +518,7 @@ a.changeBlue:hover {
     padding-left: 0px;
     letter-spacing: 1.2px;
     float: left;
+    /*darkish blue*/
     color: #0054fc;
 }
 
@@ -529,11 +567,13 @@ table.nopadding td {
 .helpbigTip {
     width: 800px;
     line-height: 1.6em;
+    /*peach-beige*/
     background: #ffe7bd;
     padding-left: 10px;
 }
 
 .old {
+    /*spring green*/
     background-color: #6ce26c !important;
     background-image: none !important;
     color: #000000 !important;
@@ -579,6 +619,7 @@ div[id="form1:listTbl"] tbody {
 }
 
 .ui-panelgrid .firstcolumn {
+    /*lightpaleishblue*/
     background: #8bc1ff;
     color: #000000;
     font-weight: bold;
@@ -598,14 +639,17 @@ div[id="form1:listTbl"] tbody {
 }
 
 .myHeaderColorLayoutStyle .ui-layout-unit-content {
+    /*lightblue*/
     background: #75bafb !important;
 }
 
 .myLogoColorLayoutStyle .ui-layout-unit-content {
+    /*very palegreyblue*/
     background: #e5edf6 !important;
 }
 
 .myColorLayoutStyle .ui-layout-unit-content {
+    /*very very pale grey blue*/
     background: #f9f9fb !important;
 }
 
@@ -616,6 +660,7 @@ div[id="form1:listTbl"] tbody {
 /*This is the main body color*/
 
 .myMainColorLayoutStyle .ui-layout-unit-content {
+    /*lightblue*/
     /*background: #75bafb !important;*/
     /*background-image: url('../images/background.jpg') !important;*/
     background-size: contain;
@@ -635,6 +680,7 @@ div[id="form1:listTbl"] tbody {
 }
 
 .headerFormat {
+    /*very very pale grey blue*/
     /*background: #f2f8ff !important;*/
     background-color: #f9f9fb !important;
 }
@@ -642,6 +688,7 @@ div[id="form1:listTbl"] tbody {
 /*----------------------------------------------- */
 
 .myMainColorLayoutStyle1 .ui-layout-unit-content {
+    /*lightblue*/
     background: #75bafb !important;
     border-left: dashed thin !important;
 }
@@ -661,6 +708,7 @@ div[id="form1:listTbl"] tbody {
 #rightBar {
     float: right;
     height: 100%;
+    /*pale grey blue*/
     background: #e5e9ed;
     z-index: 10;
     position: absolute;
@@ -796,6 +844,7 @@ a.changeBlue:hover {
     background: white;
     text-shadow: none !important;
     box-shadow: none !important;
+    /*light blue*/
     border: solid thin #75bafb !important;
 }
 
@@ -825,6 +874,7 @@ a.changeBlue:hover {
 }
 
 .myTable tr:nth-child(even) {
+    /*light cadet-baby blue*/
     background-color: #e0ecff;
 }
 
@@ -869,6 +919,7 @@ a.changeBlue:hover {
 .navigation_buttons_container .navigation-buttons {
     height: 35px;
     margin-bottom: 5px;
+    /*light blue?*/
     background-color: #75bafbc9;
     border: solid #172b68 2px;
     border-radius: 3px;
@@ -877,6 +928,7 @@ a.changeBlue:hover {
 }
 
 .navigation_buttons_container .navigation-buttons:hover {
+    /*dark teal*/
     background-color: #557592;
     color: white;
 }
